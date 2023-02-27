@@ -13,7 +13,7 @@
                   "id": "@id",
                   "type": "@type",
                   "xsd": "http://www.w3.org/2001/XMLSchema#",
-                  "common": "https://github.com/iden3/claim-schema-vocab/blob/main/credentials/common.md",
+                  "common": "https://raw.githubusercontent.com/AgnolaTommasoDev/provaschema/main/vocab.md",
                   "name": {
                       "@id": "common:name",
                       "@type": "xsd:string"
