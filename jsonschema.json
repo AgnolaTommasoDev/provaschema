@@ -80,6 +80,9 @@
         },
         "surname": {
           "type": "string"
+        },
+        "seat": {
+          "type": "string"
         }
       }
     }
