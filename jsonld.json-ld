@@ -17,6 +17,10 @@
                   "name": {
                       "@id": "common:name",
                       "@type": "xsd:string"
+                  },
+                  "surname": {
+                      "@id": "common:surname",
+                      "@type": "xsd:string"
                   }
                 }
             }
