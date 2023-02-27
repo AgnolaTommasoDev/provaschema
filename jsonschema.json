@@ -6,9 +6,7 @@
       "jsonSchema": "https://raw.githubusercontent.com/AgnolaTommasoDev/provaschema/main/jsonschema.json"
     },
     "serialization": {
-      "valueDataSlotA": "name",
-      "valueDataSlotB": "surname",
-      "valueDataSlotC": "seat"
+      "valueDataSlotA": "name"
     }
   },
   "type": "object",
@@ -82,13 +80,7 @@
         },
         "name": {
           "type": "string"
-        },
-        "surname": {
-          "type": "string"
-        },
-        "seat": {
-          "type": "string"
-        },
+        }
       }
     }
   }
