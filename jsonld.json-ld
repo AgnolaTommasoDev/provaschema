@@ -17,14 +17,6 @@
                   "name": {
                       "@id": "common:name",
                       "@type": "xsd:string"
-                  },
-                  "surname": {
-                      "@id": "common:surname",
-                      "@type": "xsd:string"
-                  },
-                  "seat": {
-                      "@id": "common:seat",
-                      "@type": "xsd:string"
                   }
                 }
             }
