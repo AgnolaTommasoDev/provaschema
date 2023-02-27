@@ -1,0 +1,33 @@
+{
+    "@context": [
+        {
+            "@version": 1.1,
+            "@protected": true,
+            "id": "@id",
+            "type": "@type",
+            "MoovTicketService": {
+                "@id": "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json-ld/stateCommitment.json-ld#MoovTicketService",
+                "@context": {
+                  "@version": 1.1,
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "xsd": "http://www.w3.org/2001/XMLSchema#",
+                  "common": "https://github.com/iden3/claim-schema-vocab/blob/main/credentials/common.md",
+                  "name": {
+                      "@id": "common:name",
+                      "@type": "xsd:string"
+                  },
+                  "surname": {
+                      "@id": "common:surname",
+                      "@type": "xsd:string"
+                  },
+                  "seat": {
+                      "@id": "common:seat",
+                      "@type": "xsd:string"
+                  }
+                }
+            }
+        }
+    ]
+}
