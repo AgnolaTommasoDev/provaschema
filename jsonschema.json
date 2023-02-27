@@ -4,10 +4,6 @@
     "uris": {
       "jsonLdContext": "https://raw.githubusercontent.com/AgnolaTommasoDev/provaschema/main/jsonld.json-ld",
       "jsonSchema": "https://raw.githubusercontent.com/AgnolaTommasoDev/provaschema/main/jsonschema.json"
-    },
-    "serialization": {
-      "valueDataSlotA": "name",
-      "valueDataSlotB": "surname",
     }
   },
   "type": "object",
