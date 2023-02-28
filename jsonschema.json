@@ -82,7 +82,7 @@
           "type": "string"
         },
         "seat": {
-          "type": "string"
+          "type": "integer"
         }
       }
     }
