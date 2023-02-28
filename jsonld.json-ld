@@ -24,7 +24,7 @@
                   },
                   "seat": {
                       "@id": "common:seat",
-                      "@type": "xsd:string"
+                      "@type": "xsd:integer"
                   }
                 }
             }
