@@ -16,8 +16,8 @@ surname of the person as string
 
 # seat
 
-seat of the person as string
+seat of the person as integer
 
 ```
-  "seat": "5B"
+  "seat": 5
 ```
