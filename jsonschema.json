@@ -1,20 +1,21 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
   "$metadata": {
     "uris": {
       "jsonLdContext": "https://raw.githubusercontent.com/AgnolaTommasoDev/provaschema/main/jsonld.json-ld",
       "jsonSchema": "https://raw.githubusercontent.com/AgnolaTommasoDev/provaschema/main/jsonschema.json"
     }
   },
-  "type": "object",
   "required": [
     "@context",
     "id",
     "type",
     "issuanceDate",
+    "credentialSubject",
     "credentialSchema",
     "credentialStatus",
-    "credentialSubject"
+    "issuer"
   ],
   "properties": {
     "@context": {
@@ -36,7 +37,27 @@
         "type": "string"
       }
     },
+    "issuer": {
+      "type": [
+        "string",
+        "object"
+      ],
+      "format": "uri",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
     "issuanceDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expirationDate": {
       "type": "string",
       "format": "date-time"
     },
@@ -64,10 +85,32 @@
         "value"
       ]
     },
+    "merklizationRootPosition": {
+      "type": "string",
+      "enum": [
+        "none",
+        "index",
+        "value"
+      ]
+    },
+    "revNonce": {
+      "type": "integer"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "updatable": {
+      "type": "boolean"
+    },
     "credentialSubject": {
       "type": "object",
       "required": [
-        "name"
+        "id",
+        "surname",
+        "name",
+        "departure",
+        "arrival",
+        "date"
       ],
       "properties": {
         "id": {
@@ -81,7 +124,13 @@
         "surname": {
           "type": "string"
         },
-        "seat": {
+        "departure": {
+          "type": "string"
+        },
+        "arrival": {
+          "type": "string"
+        },
+        "date": {
           "type": "integer"
         }
       }

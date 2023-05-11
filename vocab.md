@@ -14,10 +14,28 @@ surname of the person as string
   "surname": "Doe"
 ```
 
-# seat
+# departure
 
-seat of the person as integer
+departure location of the flight as string
 
 ```
-  "seat": 5
+  "departure": "BER"
 ```
+
+# arrival
+
+arrival location of the flight as string
+
+```
+    "arrival": "LUG"
+```
+
+# date
+
+date of the flight as timestamp in milliseconds
+
+```
+    "date": 1580515200
+```
+
+
